@@ -20,6 +20,7 @@ import BucketList from '@/components/BucketList.vue';
 import CountrySelect from '@/components/CountrySelect';
 import BucketService from '@/services/BucketService';
 import {eventBus} from '@/main.js';
+
 export default {
   name: 'App',
   data() {
