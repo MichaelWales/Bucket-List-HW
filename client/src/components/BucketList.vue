@@ -13,7 +13,7 @@ export default {
   props: ['bucketList'],
   methods: {
     updateList(){
-
+      
     }
   }
 }
