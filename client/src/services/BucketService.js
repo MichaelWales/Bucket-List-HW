@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3000/api/countries';
+const baseUrl = 'http://localhost:3000/api/countries/';
 
 export default {
   getBucketList() {
