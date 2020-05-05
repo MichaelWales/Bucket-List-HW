@@ -13,7 +13,7 @@ export default {
     })
     .then(res => res.json())
   },
-  updateBucketListItem(id, payload){
+  updateList(id, payload){
     return fetch(baseUrl + id, {
       method: 'PUT',
       body: JSON.stringify(payload),
