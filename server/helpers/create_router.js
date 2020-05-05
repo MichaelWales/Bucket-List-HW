@@ -18,17 +18,17 @@ const createRouter = function (collection) {
   });
 
   router.post('/', (req, res) => {
-    const newBucketItem = req.body;
-    collection.insertOne(newBucketItem)
+    const newCountry = req.body;
+    collection.insertOne(newCountry)
     .then(result => res.json(result.ops[0]))
   });
 
   router.put('/:id', (req, res) => {
     const id = req.params.id;
-    const updatedBucketItem = req.body;
+    const updatedCountry = req.body;
     collection.findOneAndUpdate(
       {_id: ObjectID(id)},
-      {$set: updatedBucketItem},
+      {$set: updatedCountry},
       {returnOriginal: false}
     )
     .then(result => res.json(result.value))
